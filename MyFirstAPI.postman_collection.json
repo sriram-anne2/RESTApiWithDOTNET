@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "48412e9c-b83c-4352-90c0-3124485d8fc7",
+		"name": "MyFirstAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15289906"
+	},
+	"item": [
+		{
+			"name": "POST ToDoItems",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\":\"workout\",\n  \"isComplete\":false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7256/api/todoitems",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"todoitems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ToDoItems",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7256/api/todoitems",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"todoitems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ToDoItems",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7256/api/todoitems/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"todoitems",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT ToDoItems",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n  \"name\":\"yeehaw\",\n  \"isComplete\":true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7256/api/todoitems/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7256",
+					"path": [
+						"api",
+						"todoitems",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
